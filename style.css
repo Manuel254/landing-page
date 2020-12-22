@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-size: 16px;
     font-family: Arial Helvetica sans-serif;
@@ -16,7 +20,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     min-width: 100vw;
-    min-height: 100vh;
+    min-height: 120vh;
     position: relative;
     opacity: .9;
 }
@@ -92,6 +96,29 @@ nav ul li a {
     left: 40%;
 }
 
+.content p{
+    color: #fff;
+    background: #0C2140;
+    line-height: 2em;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding: 120px 30px;
+    text-align: justify;
+}
+
+.content img {
+    width: 100%;
+    min-height: 50vh;
+}
+
+footer {
+    text-align: center;
+    background: #2f2f2f;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: -10px;
+}
+
 @media (min-width: 480px) {
     .logo {
         top: 15px;
@@ -101,6 +128,16 @@ nav ul li a {
         justify-content: flex-end;
         margin: 0 20px;
         padding-top: 0;
+    }
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-row: auto;
+    }
+    .about {
+        position: absolute;
+        top: 25%;
+        left: 12%;
     }
 }
 
