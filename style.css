@@ -47,7 +47,7 @@ body {
     letter-spacing: 5px;
     position:absolute;
     top: 2%;
-    left: 43%;
+    left: 38%;
 }
 
 nav ul {
@@ -73,16 +73,18 @@ nav ul li a {
 .about-info {
     text-align: center;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 100;
     letter-spacing: 1px;
-    margin:10% auto 5% auto;
+    margin-top: 60px;
 }
 
 .about-info span{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .about-more {
@@ -93,7 +95,8 @@ nav ul li a {
     padding: 20px 30px;
     border-radius: 5px;
     position: absolute;
-    left: 40%;
+    left: 35%;
+    margin-top: 20px;
 }
 
 .content p{
@@ -138,6 +141,9 @@ footer {
         position: absolute;
         top: 25%;
         left: 12%;
+    }
+    .about-info span{
+        font-size: 3.5rem;
     }
 }
 
