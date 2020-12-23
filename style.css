@@ -117,20 +117,15 @@ nav ul li a {
     text-justify: inter-word;
 }
 
-.carousel-container {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
-
-.carousel {
+.image-container {
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-.carousel img {
-    width: 100%;
-    height: auto;
+.images{
+    width: 80%;
+    margin: 1% 0;
 }
 
 footer {
@@ -138,7 +133,6 @@ footer {
     background: #2f2f2f;
     color: #fff;
     padding: 25px 0;
-    margin-top: -10px
 }
 
 /* Tablets and mobile auto-rotate */
@@ -171,11 +165,11 @@ footer {
     .about-more {
         left: 45%;
     }
-    .content {
+    /* .content {
         display: grid;
         grid-template-columns: 40% 60%;
         grid-row: auto;
-    }
+    } */
     footer {
         padding: 30px 0;
         margin: 0;
