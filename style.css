@@ -4,23 +4,20 @@
     box-sizing: border-box;
 }
 
-html {
-    overflow-x: hidden;
-}
-
 body {
     font-size: 16px;
     font-family: Arial Helvetica sans-serif;
     color:#fff;
+    overflow-x: hidden;
 }
 
 .showcase {
     background:url('images/bg.jpeg');
     background-size: cover;
-    background-position: center center;
+    background-position: top;
     background-repeat: no-repeat;
     min-width: 100vw;
-    min-height: 120vh;
+    min-height: 80vh;
     position: relative;
     opacity: .9;
 }
@@ -70,6 +67,14 @@ nav ul li a {
     color: #F9D032
 }
 
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
 .about-info {
     text-align: center;
     color: #fff;
@@ -80,11 +85,12 @@ nav ul li a {
 }
 
 .about-info span{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 10px auto;
+    line-height:1.7em;
 }
 
 .about-more {
@@ -94,8 +100,6 @@ nav ul li a {
     font-size: 14px;
     padding: 20px 30px;
     border-radius: 5px;
-    position: absolute;
-    left: 35%;
     margin-top: 20px;
 }
 
@@ -109,20 +113,32 @@ nav ul li a {
     text-align: justify;
 }
 
-.content img {
+.carousel-container {
     width: 100%;
-    min-height: 50vh;
+    height: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
 }
 
 footer {
     text-align: center;
     background: #2f2f2f;
     color: #fff;
-    padding: 20px 0;
-    margin-top: -10px;
+    padding: 25px 0;
+    margin-top: -10px
 }
 
-@media (min-width: 480px) {
+/* Tablets and mobile auto-rotate */
+@media (min-width: 550px) {
     .logo {
         top: 15px;
         left:20px;
@@ -132,23 +148,32 @@ footer {
         margin: 0 20px;
         padding-top: 0;
     }
-    .content {
-        display: grid;
-        grid-template-columns: repeat(2,50%);
-        grid-row: auto;
-    }
     .about {
         position: absolute;
-        top: 25%;
-        left: 12%;
+        top: 3%;
+        left: 0;
     }
     .about-info span{
         font-size: 3.5rem;
     }
 }
 
-@media (min-width: 1000px) {
+/* Desktops */
+@media (min-width: 1500px) {
+    .about {
+        top: 10%;
+        left: 12%;
+    }
     .about-more {
         left: 45%;
+    }
+    .content {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-row: auto;
+    }
+    footer {
+        padding: 30px 0;
+        margin: 0;
     }
 }
