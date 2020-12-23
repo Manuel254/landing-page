@@ -147,6 +147,9 @@ footer {
         margin: 0 20px;
         padding-top: 0;
     }
+    .showcase {
+        min-height: 120vh;
+    }
     .about {
         position: absolute;
         top: 3%;
@@ -159,6 +162,9 @@ footer {
 
 /* Desktops */
 @media (min-width: 1500px) {
+    .showcase {
+        min-height: 80vh;
+    }
     .about {
         top: 10%;
         left: 12%;
