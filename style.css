@@ -111,9 +111,9 @@ nav ul li a {
     color: #fff;
     background: #0C2140;
     line-height: 2em;
-    letter-spacing: 2px;
+    letter-spacing: .5px;
     font-size: 20px;
-    padding: 120px 30px;
+    padding: 120px 15px;
     text-align: justify;
 }
 
