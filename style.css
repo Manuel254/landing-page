@@ -119,12 +119,13 @@ nav ul li a {
 
 .image-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
 }
 .images{
-    width: 80%;
+    width: 100%;
     margin: 1% 0;
 }
 
@@ -164,6 +165,11 @@ footer {
     }
     .about-more {
         left: 45%;
+    }
+    .images {
+        width: 45%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
     }
     /* .content {
         display: grid;
